@@ -27,6 +27,12 @@ body {
   }
 }
 
+.conteiner {
+  width: 100vw;
+  height: calc(100vh - 6rem);
+  box-sizing: border-box;
+}
+
 .header_title {
   display: flex;
   align-items: center;
@@ -42,3 +48,13 @@ body {
 
 }
 
+.footer {
+  height: 4rem;
+  box-sizing: border-box;
+  margin-top: 2rem;
+  background-color: $colormainfont;
+  display: flex;
+  justify-content: center;
+  padding: 1rem;
+  color: lightgrey;
+}

@@ -29,3 +29,21 @@ h4 {
   font-weight: 200;
 }
 
+.kontakt_fnt {
+  @include mainfont;
+  color: lightgrey;
+  font-size: 2rem;
+}
+
+.kontakt_fnt_name {
+  @include mainfont;
+  color: #707070;
+  font-size: 2rem;
+}
+
+.kontakt_main_font {
+  @include mainfont;
+  font-size: 1.5rem;
+  font-weight: 200;
+  color: lightgrey;
+}

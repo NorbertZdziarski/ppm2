@@ -1,0 +1,35 @@
+.kontakt_conteiner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+
+.kontakt_img {
+  width: 5rem;
+  height: 5rem;
+
+}
+
+.kontakt_box {
+  box-sizing: border-box;
+  padding: 3rem;
+  display: flex;
+  background-color: $colormainfont;
+  width: 60rem;
+  height: 30rem;
+  color: lightgrey;
+  justify-content: space-around;
+}
+
+.kontakt_header {
+  display: block;
+  justify-content: center;
+
+  border-bottom: 1px solid darkgrey;
+  margin-bottom: 1.5rem;
+}
+
+.kontakt_right_column {
+
+}
