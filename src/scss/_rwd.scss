@@ -1,0 +1,11 @@
+@mixin rwd {
+  @media screen and (max-width: 950px) {
+    @content
+  }
+}
+
+//@mixin rwd_mobile {
+//  @media screen and (max-width: 900px) {
+//    @content
+//  }
+//}

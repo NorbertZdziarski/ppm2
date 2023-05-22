@@ -1,0 +1,16 @@
+@import "./scss/_reset.scss";
+
+:root {
+  font-size: 10px;
+}
+
+@import "./scss/_variables.scss";
+@import "./scss/_rwd.scss";
+@import "./scss/_fonts.scss";
+@import "./scss/_buttons.scss";
+
+
+
+@import "./scss/_mainstructure.scss";
+@import "./scss/_mainview.scss";
+

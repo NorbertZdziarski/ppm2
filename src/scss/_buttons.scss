@@ -1,0 +1,8 @@
+.header_button {
+  margin-left: 2rem;
+  margin-right: 1rem;
+  &:hover {
+    color: $colorheaderselected;
+    transition-duration: 0.3s;
+  }
+}

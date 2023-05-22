@@ -1,33 +1,30 @@
 import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import MainView from "./jsxfiles/mainView.jsx";
+
+
 
 function App() {
-  const [count, setCount] = useState(0)
-
+    const [view, setView] = useState('0');
+    console.log("ddd")
   return (
     <>
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
+        <main className="main_structure">
+          <header className='header_style menufont'>
+              <div className="header_title">
+                  <img src="../src/image/ico/logo_white.png" alt="logo ppm2"/>
+                  <p className="header_company_name">PRACOWNIA PROJEKTOWA M KWADRAT </p>
+                  <p className="header_person_name">MICHAŁ DĄBEK</p>
+              </div>
+              <div className="header_title">
+                  <nav>
+                      <a className="header_button">PRACOWNIA</a>
+                      <a className="header_button">PROJEKTY</a>
+                      <a className="header_button">KONTAKT</a>
+                  </nav>
+              </div>
+          </header>
+            <MainView/>
+        </main>
     </>
   )
 }

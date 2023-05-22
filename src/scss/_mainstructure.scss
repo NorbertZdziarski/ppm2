@@ -1,0 +1,44 @@
+body {
+  background-color: $backgroundcolor;
+}
+
+.main_structure {
+  width: 100vw;
+  height: 100vh;
+}
+
+.header_style {
+  box-sizing: border-box;
+  color: white;
+  background-color: rgba(0,0,0,0.4);
+  width: 100vw;
+  height: $headerheight;
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 100;
+  font-size: 1.6rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem;
+  @include rwd {
+    display: block;
+  }
+}
+
+.header_title {
+  display: flex;
+  align-items: center;
+}
+
+.header_company_name {
+  margin-left: 1rem;
+}
+
+.header_person_name {
+  margin-left: 0.5rem;
+  color: $colorheaderselected;
+
+}
+

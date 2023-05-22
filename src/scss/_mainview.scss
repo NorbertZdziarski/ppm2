@@ -1,0 +1,100 @@
+
+
+.mainview_header {
+  width: 100vw;
+  height: 100vh;
+  background-image: url("../../src/image/bgr/tlo.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+
+}
+
+.mainview_conteiner {
+    width: 940px;
+    margin-inline: auto;
+  @include rwd {
+    width: 100%;
+  }
+}
+
+.mainview_section {
+  margin: 1.5rem 0;
+  border-bottom: 1px solid lightgrey;
+}
+
+.mainview_portfolio_project {
+  margin: 0.5rem 0;
+  display: flex;
+  justify-content: space-between;
+  @include rwd {
+    display: block;
+  }
+  &:hover {
+    background-color: rgb(255, 255, 255);
+    transition-duration: 0.5s;
+  }
+}
+
+.mainview_box {
+  box-sizing: border-box;
+  padding: 1rem;
+  width: $boxsize;
+  height: $boxsize;
+  //border: 1px solid white;
+  @include rwd {
+    width: 100%;
+  }
+}
+
+.mainview_box__title {
+  display: flex;
+  text-align: center;
+  align-items: center;
+}
+
+.mainview_box__title_order {
+  order: 1;
+}
+
+.mainview_box__description {
+  display: flex;
+  align-items: center;
+  text-align: justify;
+}
+.mainview_box__description_order {
+  order: 0;
+}
+
+
+
+.mainview_box__image {
+  padding: 0;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+
+
+}
+.mainview_box__image_order {
+  order: -1;
+}
+
+.mainview_image {
+  height: 100%;
+  overflow-clip-margin: content-box;
+  @include rwd {
+    width: 100%;
+    height: auto;
+
+  }
+}
+
+.footer {
+  margin-top: 2rem;
+  background-color: $colormainfont;
+  display: flex;
+  justify-content: center;
+  padding: 1rem;
+  color: lightgrey;
+}
