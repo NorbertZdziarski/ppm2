@@ -1,7 +1,7 @@
 import React from 'react';
 import Footer from "./footer.jsx";
 
-function MainView(props) {
+function MainView() {
     return (
         <>
             <header className="mainview_header">

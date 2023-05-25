@@ -1,7 +1,7 @@
 import React from 'react';
 import Footer from "./footer.jsx";
 
-function Pracownia(props) {
+function Pracownia() {
     return (
         <>
             <div className="conteiner mainview_conteiner ">

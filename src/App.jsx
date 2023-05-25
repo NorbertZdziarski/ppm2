@@ -7,7 +7,7 @@ import Kontakt from "./jsxfiles/kontakt.jsx";
 
 
 function App() {
-    const [view, setView] = useState('1');
+
     const [viewMain, setViewMain] = useState(true);
     const [viewPracowania, setViewPracownia] = useState('1');
     const [viewProjekty, setViewProjekty] = useState('1');

@@ -1,7 +1,7 @@
 import React from 'react';
 import Footer from "./footer.jsx";
 
-function Kontakt(props) {
+function Kontakt() {
     return (
         <>
         <div className="kontakt_conteiner conteiner">

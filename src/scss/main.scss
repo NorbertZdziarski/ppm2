@@ -1,0 +1,18 @@
+@import "reset";
+
+:root {
+  font-size: 10px;
+}
+
+@import "variables";
+@import "rwd";
+@import "fonts";
+@import "buttons";
+
+
+
+@import "mainstructure";
+@import "mainview";
+@import "projekty";
+@import "kontakt";
+
