@@ -6,7 +6,7 @@ function Pracownia() {
         <>
             <div className="conteiner mainview_conteiner paddingtop">
                 <header className="projekty_header">
-                    <h2>pracownia:</h2>
+                    <h2>Pracownia:</h2>
                 </header>
 
                 <p className="mainfont pracownia_section">PRACOWNIA PROJEKTOWA M KWADRAT, to autorska pracownia architektoniczna, działająca formalnie od 2004 roku. Zajmuje się projektowaniem architektonicznym w szerokiej skali – zaczynając od projektów wnętrz, poprzez projekty budynków mieszkalnych i użyteczności publicznej, a kończąc na przestrzeniach publicznych placów miejskich oraz budowlach inżynierskich.</p>

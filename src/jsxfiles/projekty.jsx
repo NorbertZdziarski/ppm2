@@ -16,24 +16,46 @@ function Projekty() {
             "id": 1
         },
         {
-            "title": "projekt nr 2",
+            "title": "PROJEKT BUDYNKU POLITECHNIKI LUBELSKIEJ – WYDZIAŁ ARCHITEKTURY",
             "type": "",
-            "description":" Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum  ",
-            "cooperation":"",
-            "phase":"",
+            "description":"Przedmiotem inwestycji była przebudowa zespołu pałacowego Sobieskich w Lublinie przy ulicy Bernardyńskiej 13 dla inwestycji p.n. „Wschodnie Innowacyjne Centrum Architektury – rozbudowa i wyposażenie kompleksu dydaktyczno – naukowego Politechniki Lubelskiej dla kierunku Architektura i Urbanistyka”.",
+            "cooperation":"Projekt zrealizowano we współpracy autorskiej z APPP-ANDRZEJ GETTER.",
+            "phase":"/ Projekt budowlany i wykonawczy /2009 r./",
             "award":"",
             "realization": "",
+            "dataPTI" : 4906,
+            "dataPZ" : 2549,
+            "dataPU" : 6126,
+            "dataKubatura" : 32147,
             "id": 2,
+        },
+        {
+            "title": "PROJEKT BUDYNKU MIESZKALNEGO Z USŁUGAMI TOWARZYSZĄCYMI PRZY UL. NADWIŚLAŃSKIEJ W KRAKOWIE.",
+            "type": "",
+            "description":"Przedmiotem projektu był budynek mieszkalny – z parterem usługowym w zabudowie kwartałowej w ciągu ulic Nadwiślańskiej i Piwnej.",
+            "cooperation":"Projekt zrealizowano we współpracy autorskiej z BP – WOJCIECH SARAN.",
+            "phase":"Projekt budowlany /2009 r./",
+            "award":"",
+            "realization": "",
+            "dataPTI" : 6848,
+            "dataPZ" : 5448,
+            "dataPU" : 27627,
+            "dataKubatura" : 85755,
+            "id": 3,
         },
         {
             "title": "",
             "type": "",
-            "description":"11111111111 1111111111333333333333333333 3333333333333333333 333333333333 33333333333333333333333333333 11 111111111111111 33333333333333333 3333333333333333333333333 333333333333333333333333333333 33333333333333333333333333  11111111111111111111 11111111 33333333333333 33333333333333333 333333333333333333333 333333333333333333333 3333333333333",
+            "description":"",
             "cooperation":"",
             "phase":"",
             "award":"",
             "realization": "",
-            "id": 3,
+            "dataPTI" : 0,
+            "dataPZ" : 0,
+            "dataPU" : 0,
+            "dataKubatura" : 0,
+            "id": 4,
         }
     ]
     const ShowBigPrj = ({ind, setBigView, description}) => {
@@ -41,7 +63,7 @@ function Projekty() {
         return (<>
             <p className="mainfont txtsection"></p>
             <p className="mainfont txtsection">{description}</p>
-            <button className="moreless_btn" value={ind} onClick={() => setBigView(true)}>Less</button>
+            <button className="moreless_btn" value={ind} onClick={() => setBigView(true)}>zamknij</button>
         </>)
     }
 
@@ -64,7 +86,7 @@ function Projekty() {
 
             {(bigView ? <>
                 <p className="mainfont">{projekt.description.slice(0,200)} ...</p>
-                <button className="moreless_btn" value={projektNr} onClick={() => chooseProject(projektNr)}>More</button>
+                <button className="moreless_btn" value={projektNr} onClick={() => chooseProject(projektNr)}>więcej informacji</button>
                 </> :<ShowBigPrj ind={ind} setBigView = {setBigView} description = {projekt.description} />)}
         </div>)
     }

@@ -16,6 +16,11 @@ function Kontakt() {
                     <div>
                         <p className="kontakt_main_font">dane kontaktowe:</p>
                     </div>
+                    <div>
+                        <p className="kontakt_main_font txtsection_odstep">Tel: 509 059 789</p>
+                        <p className="kontakt_main_font txtsection_odstep">E-mail: <a href="mailto:biuro@ppm2.pl" className="kontakt_main_font">biuro@ppm2.pl</a></p>
+
+                    </div>
                 </div>
             </div>
 
