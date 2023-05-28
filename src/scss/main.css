@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Lexend:wght@200&display=swap");
 html, body, div, span, applet, object, iframe,
+cuhtml, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
 del, dfn, em, font, img, ins, kbd, q, s, samp,
@@ -15,96 +16,135 @@ table, caption, tbody, tfoot, thead, tr, th, td {
   font-style: inherit;
   font-size: 100%;
   font-family: inherit;
-  vertical-align: baseline; }
+  vertical-align: baseline;
+}
 
 /* remember to define focus styles! */
 :focus {
-  outline: 0; }
+  outline: 0;
+}
 
 body {
   line-height: 1;
   color: black;
-  background: white; }
+  background: white;
+}
 
 ol, ul {
-  list-style: none; }
+  list-style: none;
+}
 
 /* tables still need 'cellspacing="0"' in the markup */
 table {
   border-collapse: separate;
-  border-spacing: 0; }
+  border-spacing: 0;
+}
 
 caption, th, td {
   text-align: left;
-  font-weight: normal; }
+  font-weight: normal;
+}
 
 blockquote:before, blockquote:after,
 q:before, q:after {
-  content: ""; }
+  content: "";
+}
 
 blockquote, q {
-  quotes: "" ""; }
+  quotes: "" "";
+}
 
 :root {
-  font-size: 10px; }
+  font-size: 10px;
+}
 
 .menufont {
-  font-family: "Lexend",sans-serif; }
+  font-family: "Lexend", sans-serif;
+}
 
 h2 {
-  font-family: "Lexend",sans-serif;
-  color: #242424;
-  font-size: 2rem; }
+  font-family: "Lexend", sans-serif;
+  color: rgb(36, 36, 36);
+  font-size: 2rem;
+}
 
 h3 {
-  font-family: "Courier New",sans-serif;
-  color: #242424;
-  font-size: 4.5rem; }
+  font-family: "Courier New", sans-serif;
+  color: rgb(36, 36, 36);
+  font-size: 4.5rem;
+}
 
 h4 {
-  font-family: "Lexend",sans-serif;
-  color: #242424;
-  font-size: 1.5rem;
-  font-weight: 700; }
+  font-family: "Lexend", sans-serif;
+  color: rgb(36, 36, 36);
+  font-size: 1.6rem;
+  font-weight: 700;
+}
 
 .mainfont {
-  font-family: "Lexend",sans-serif;
-  color: #242424;
-  font-size: 1.5rem;
-  font-weight: 200; }
+  font-family: "Lexend", sans-serif;
+  color: rgb(36, 36, 36);
+  font-size: 1.6rem;
+  font-weight: 200;
+  line-height: 2rem;
+}
 
 .kontakt_fnt {
-  font-family: "Lexend",sans-serif;
-  color: #242424;
+  font-family: "Lexend", sans-serif;
+  color: rgb(36, 36, 36);
   color: lightgrey;
-  font-size: 2rem; }
+  font-size: 2rem;
+}
 
 .kontakt_fnt_name {
-  font-family: "Lexend",sans-serif;
-  color: #242424;
+  font-family: "Lexend", sans-serif;
+  color: rgb(36, 36, 36);
   color: #707070;
-  font-size: 2rem; }
+  font-size: 2rem;
+}
 
 .kontakt_main_font {
-  font-family: "Lexend",sans-serif;
-  color: #242424;
-  font-size: 1.5rem;
+  font-family: "Lexend", sans-serif;
+  color: rgb(36, 36, 36);
+  font-size: 1.6rem;
   font-weight: 200;
-  color: lightgrey; }
+  color: lightgrey;
+}
 
 .header_button {
   margin-left: 2rem;
-  margin-right: 1rem; }
-  .header_button:hover {
-    color: #242424;
-    transition-duration: 0.3s; }
+  margin-right: 1rem;
+}
+.header_button:hover {
+  cursor: pointer;
+  color: rgb(36, 36, 36);
+  transition-duration: 0.3s;
+}
+
+.logo_btn:hover {
+  cursor: pointer;
+}
+
+.moreless_btn {
+  margin: 2px;
+  width: 15rem;
+  background-color: white;
+  border-radius: 4px;
+  padding: 3px;
+}
+.moreless_btn:hover {
+  box-shadow: inset 1px 1px 2px 2px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+}
 
 body {
-  background-color: #f8f8f8; }
+  background-color: rgb(248, 248, 248);
+}
 
 .main_structure {
   width: 100vw;
-  height: 100vh; }
+  height: 100vh;
+}
 
 .header_style {
   box-sizing: border-box;
@@ -120,36 +160,49 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 2rem; }
-  @media screen and (max-width: 950px) {
-    .header_style {
-      display: block; } }
+  padding: 2rem;
+}
+@media screen and (max-width: 950px) {
+  .header_style {
+    display: block;
+  }
+}
 
 .conteiner {
   width: 100vw;
   height: calc(100vh - 6rem);
-  box-sizing: border-box; }
+  box-sizing: border-box;
+}
 
 .header_title {
   display: flex;
-  align-items: center; }
+  align-items: center;
+}
 
 .header_company_name {
-  margin-left: 1rem; }
+  margin-left: 1rem;
+}
 
 .header_person_name {
   margin-left: 0.5rem;
-  color: #242424; }
+  color: rgb(36, 36, 36);
+}
 
 .footer {
   height: 4rem;
   box-sizing: border-box;
   margin-top: 2rem;
-  background-color: #242424;
+  background-color: rgb(36, 36, 36);
   display: flex;
   justify-content: center;
   padding: 1rem;
-  color: lightgrey; }
+  color: lightgrey;
+}
+
+.pracownia_section {
+  margin-bottom: 15px;
+  text-align: justify;
+}
 
 .mainview_header {
   width: 100vw;
@@ -157,98 +210,149 @@ body {
   background-image: url("../../src/image/bgr/tlo.jpg");
   background-position: center;
   background-size: cover;
-  background-repeat: no-repeat; }
+  background-repeat: no-repeat;
+}
 
 .mainview_conteiner {
   width: 940px;
-  margin-inline: auto; }
-  @media screen and (max-width: 950px) {
-    .mainview_conteiner {
-      width: 100%; } }
+  margin-inline: auto;
+}
+@media screen and (max-width: 950px) {
+  .mainview_conteiner {
+    width: 100%;
+  }
+}
 
 .mainview_section {
   margin: 1.5rem 0;
-  border-bottom: 1px solid lightgrey; }
+  border-bottom: 1px solid lightgrey;
+}
 
 .mainview_portfolio_project {
   margin: 0.5rem 0;
   display: flex;
-  justify-content: space-between; }
-  @media screen and (max-width: 950px) {
-    .mainview_portfolio_project {
-      display: block; } }
-  .mainview_portfolio_project:hover {
-    background-color: white;
-    transition-duration: 0.5s; }
+  justify-content: space-between;
+}
+@media screen and (max-width: 950px) {
+  .mainview_portfolio_project {
+    display: block;
+  }
+}
+.mainview_portfolio_project:hover {
+  cursor: pointer;
+  background-color: rgb(255, 255, 255);
+  transition-duration: 0.5s;
+}
 
 .mainview_box {
   box-sizing: border-box;
   padding: 1rem;
   width: 30rem;
-  height: 30rem; }
-  @media screen and (max-width: 950px) {
-    .mainview_box {
-      width: 100%; } }
+  height: 30rem;
+}
+@media screen and (max-width: 950px) {
+  .mainview_box {
+    width: 100%;
+  }
+}
 
 .mainview_box__title {
   display: flex;
   text-align: center;
-  align-items: center; }
+  align-items: center;
+}
 
 .mainview_box__title_order {
-  order: 1; }
+  order: 1;
+}
 
 .mainview_box__description {
   display: flex;
   align-items: center;
-  text-align: justify; }
+  text-align: justify;
+}
 
 .mainview_box__description_order {
-  order: 0; }
+  order: 0;
+}
 
 .mainview_box__image {
   padding: 0;
   overflow: hidden;
   display: flex;
-  align-items: center; }
+  align-items: center;
+}
 
 .mainview_box__image_order {
-  order: -1; }
+  order: -1;
+}
 
 .mainview_image {
   height: 100%;
-  overflow-clip-margin: content-box; }
-  @media screen and (max-width: 950px) {
-    .mainview_image {
-      width: 100%;
-      height: auto; } }
+  overflow-clip-margin: content-box;
+}
+@media screen and (max-width: 950px) {
+  .mainview_image {
+    width: 100%;
+    height: auto;
+  }
+}
 
 .projekty_header {
-  margin-top: 12rem;
   border-bottom: 1px solid darkgrey;
-  margin-bottom: 2rem; }
+  margin-bottom: 2rem;
+}
+
+.paddingtop {
+  padding-top: 12rem;
+}
+
+.projekt_box {
+  width: 95%;
+  border: 0 solid darkgrey;
+  background-color: #ffffff;
+  box-shadow: 0 0 5px 4px rgba(0, 0, 0, 0.05);
+  margin-inline: auto;
+  padding: 10px;
+  border-radius: 5px;
+  margin-bottom: 1rem;
+}
+
+.txtsection {
+  border-bottom: 1px dashed rgb(36, 36, 36);
+}
+
+.txtsection_akaptit {
+  margin: 0.5rem 0 0.5rem 2rem;
+}
 
 .kontakt_conteiner {
   display: flex;
   align-items: center;
-  justify-content: center; }
+  justify-content: center;
+}
 
 .kontakt_img {
   width: 5rem;
-  height: 5rem; }
+  height: 5rem;
+}
 
 .kontakt_box {
   box-sizing: border-box;
   padding: 3rem;
   display: flex;
-  background-color: #242424;
+  background-color: rgb(36, 36, 36);
   width: 60rem;
   height: 30rem;
   color: lightgrey;
-  justify-content: space-around; }
+  justify-content: space-around;
+}
 
 .kontakt_header {
   display: block;
   justify-content: center;
   border-bottom: 1px solid darkgrey;
-  margin-bottom: 1.5rem; }
+  margin-bottom: 1.5rem;
+}
+
+/*# sourceMappingURL=main.css.map */

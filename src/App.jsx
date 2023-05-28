@@ -3,6 +3,7 @@ import MainView from "./jsxfiles/mainView.jsx";
 import Pracownia from "./jsxfiles/pracownia.jsx";
 import Projekty from "./jsxfiles/projekty.jsx";
 import Kontakt from "./jsxfiles/kontakt.jsx";
+import Nagrody from "./jsxfiles/nagrody.jsx";
 
 
 
@@ -12,34 +13,29 @@ function App() {
     const [viewPracowania, setViewPracownia] = useState('1');
     const [viewProjekty, setViewProjekty] = useState('1');
     const [viewKontakt, setViewKontakt] = useState('1');
-    console.log("ddd")
+    const [viewNagrody, setViewNagrody] = useState('1');
 
     function SectionSelection(value) {
-        console.log(value)
+        setViewMain(false);
+        setViewPracownia(false);
+        setViewProjekty(false);
+        setViewKontakt(false);
+        setViewNagrody(false);
         switch (value) {
             case 1:
                 setViewMain(true);
-                setViewPracownia(false);
-                setViewProjekty(false);
-                setViewKontakt(false);
                 return;
             case 2:
-                setViewMain(false);
                 setViewPracownia(true);
-                setViewProjekty(false);
-                setViewKontakt(false);
                 return;
             case 3:
-                setViewMain(false);
-                setViewPracownia(false);
                 setViewProjekty(true);
-                setViewKontakt(false);
                 return;
             case 4:
-                setViewMain(false);
-                setViewPracownia(false);
-                setViewProjekty(false);
                 setViewKontakt(true);
+                return;
+            case 5:
+                setViewNagrody(true);
                 return;
         }
     }
@@ -49,7 +45,7 @@ function App() {
         <main className="main_structure">
           <header className='header_style menufont'>
               <div className="header_title">
-                  <img src="../src/image/ico/logo_white.png" alt="logo ppm2" onClick={() => SectionSelection(1)}/>
+                  <img src="../src/image/ico/logo_white.png" alt="logo ppm2" className="logo_btn" onClick={() => SectionSelection(1)}/>
                   <p className="header_company_name">PRACOWNIA PROJEKTOWA M KWADRAT </p>
                   <p className="header_person_name">MICHAŁ DĄBEK</p>
               </div>
@@ -57,6 +53,7 @@ function App() {
                   <nav>
                       <a className="header_button" onClick={() => SectionSelection(2)}>PRACOWNIA</a>
                       <a className="header_button" onClick={() => SectionSelection(3)}>PROJEKTY</a>
+                      <a className="header_button" onClick={() => SectionSelection(5)}>NAGRODY</a>
                       <a className="header_button" onClick={() => SectionSelection(4)}>KONTAKT</a>
                   </nav>
               </div>
@@ -65,6 +62,7 @@ function App() {
             {viewPracowania ? <Pracownia/> : ''}
             {viewProjekty ? <Projekty/> : ''}
             {viewKontakt ? <Kontakt/> : ''}
+            {viewNagrody ? <Nagrody/> : ''}
         </main>
     </>
   )

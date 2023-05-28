@@ -1,5 +1,27 @@
 .projekty_header {
-  margin-top: 12rem;
   border-bottom: 1px solid darkgrey ;
   margin-bottom: 2rem;
+}
+
+.paddingtop {
+  padding-top: 12rem;
+}
+
+.projekt_box {
+  width: 95%;
+  border: 0 solid darkgrey;
+  background-color: #ffffff;
+  box-shadow: 0 0 5px 4px rgba(0,0,0,0.05);
+  margin-inline: auto;
+  padding: 10px;
+  border-radius: 5px;
+  margin-bottom: 1rem;
+}
+
+.txtsection {
+  border-bottom: 1px dashed $colorheaderselected;
+}
+
+.txtsection_akaptit {
+  margin: 0.5rem 0 0.5rem 2rem;
 }

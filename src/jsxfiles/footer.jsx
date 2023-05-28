@@ -1,9 +1,11 @@
 import React from 'react';
 
 function Footer() {
+    const d = new Date()
+    let year = d.getFullYear();
     return (
         <footer className="footer mainfont">
-            <p >(C) PPm2 2023</p>
+            <p >(C) {year} Pracownia Projektowa M Kwadrat Michał Dąbek. Realizacja: Norbert Zdziarski</p>
         </footer>
     );
 }

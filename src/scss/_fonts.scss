@@ -20,13 +20,14 @@ h3 {
 
 h4 {
   @include mainfont;
-  font-size: 1.5rem;
+  font-size: 1.6rem;
   font-weight: 700;
 }
 .mainfont {
   @include mainfont;
-  font-size: 1.5rem;
+  font-size: 1.6rem;
   font-weight: 200;
+  line-height: 2rem;
 }
 
 .kontakt_fnt {
@@ -43,7 +44,7 @@ h4 {
 
 .kontakt_main_font {
   @include mainfont;
-  font-size: 1.5rem;
+  font-size: 1.6rem;
   font-weight: 200;
   color: lightgrey;
 }
