@@ -1,5 +1,8 @@
 import React from 'react';
 import Footer from "./footer.jsx";
+import portugalia from "../../src/image/prj/Portugalia2016_3.jpg"
+import nysa from "../../src/image/prj/Nysa_S1.jpg"
+import tpn from "../../src/image/prj/TPN-w2-a.jpg"
 
 function MainView() {
     return (
@@ -23,7 +26,7 @@ function MainView() {
                             </div>
                         </div>
                         <div className="mainview_box mainview_box__image">
-                            <img src="../../src/image/prj/Portugalia2016_3.jpg"className="mainview_image" alt="Portugal" />
+                            <img src={portugalia} className="mainview_image" alt="Portugal" />
                         </div>
                     </div>
 
@@ -43,7 +46,7 @@ function MainView() {
                         </div>
 
                         <div className="mainview_box mainview_box__image mainview_box__image_order">
-                            <img src="../../src/image/prj/TPN-w2-a.jpg"className="mainview_image" alt="Portugal" />
+                            <img src={tpn} className="mainview_image" alt="TPN" />
                         </div>
 
 
@@ -60,7 +63,7 @@ function MainView() {
                             </div>
                         </div>
                         <div className="mainview_box mainview_box__image">
-                            <img src="../../src/image/prj/Nysa_S1.jpg"className="mainview_image" alt="Portugal" />
+                            <img src={nysa} className="mainview_image" alt="Nysa" />
                         </div>
                     </div>
 
