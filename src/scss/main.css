@@ -336,6 +336,10 @@ li {
 
 .paddingtop {
   padding-top: 12rem;
+}
+
+.paddingtop2 {
+  padding-top: 12rem;
   height: auto;
 }
 
@@ -369,7 +373,7 @@ li {
 .projekt_blenda:hover {
   transition-duration: 0.5s;
   cursor: pointer;
-  opacity: 0.6;
+  opacity: 0.85;
 }
 
 .projekt_opis {
@@ -432,6 +436,10 @@ li {
   margin-top: 12rem;
 }
 
+.projekt_box_img {
+  position: relative;
+}
+
 .prj_description_box {
   display: flex;
   padding-top: 2rem;
@@ -439,6 +447,7 @@ li {
 
 .prj_main_img {
   width: 100%;
+  position: relative;
 }
 
 .prj_left_column {
@@ -464,6 +473,59 @@ li {
   box-sizing: border-box;
   text-align: justify;
   width: 54rem;
+}
+
+.prj_main_btn_l {
+  z-index: 20;
+  width: 3.5rem;
+  height: 100%;
+  bottom: 0;
+  background-color: rgb(0, 0, 0);
+  opacity: 0.1;
+  border: 0;
+  position: absolute;
+  left: 0;
+}
+.prj_main_btn_l:hover {
+  background-color: rgb(0, 0, 0);
+  opacity: 0.5;
+}
+.prj_main_btn_l:after {
+  content: "";
+  position: absolute;
+  rotate: 45deg;
+  left: 1rem;
+  top: calc(50% - 1rem);
+  width: 2rem;
+  height: 2rem;
+  border-left: 0.2rem solid white;
+  border-bottom: 0.2rem solid white;
+}
+
+.prj_main_btn_r {
+  z-index: 20;
+  width: 3.5rem;
+  height: 100%;
+  bottom: 0;
+  background-color: rgb(0, 0, 0);
+  opacity: 0.1;
+  position: absolute;
+  right: 0;
+}
+.prj_main_btn_r:hover {
+  background-color: rgb(0, 0, 0);
+  opacity: 0.5;
+}
+.prj_main_btn_r:after {
+  content: "";
+  position: absolute;
+  rotate: 225deg;
+  left: 0.1rem;
+  top: calc(50% - 1rem);
+  width: 2rem;
+  height: 2rem;
+  border-left: 0.2rem solid white;
+  border-bottom: 0.2rem solid white;
 }
 
 /*# sourceMappingURL=main.css.map */

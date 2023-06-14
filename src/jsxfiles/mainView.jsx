@@ -3,6 +3,7 @@ import Footer from "./footer.jsx";
 import portugalia from "../../src/image/prj/Portugalia2016_3.jpg"
 import nysa from "../../src/image/prj/Nysa_S1.jpg"
 import tpn from "../../src/image/prj/TPN-w2-a.jpg"
+import {Link} from "react-router-dom";
 
 function MainView() {
     return (
@@ -15,6 +16,8 @@ function MainView() {
                     <div className="mainview_section">
                         <h2>WYBRANE PROJEKTY</h2>
                     </div>
+                    <Link to="/pracownia/16">
+
                     <div className="mainview_portfolio_project">
                         <div className="mainview_box mainview_box__title">
                             <h3>SAGRES, PORTUGALIA</h3>
@@ -29,6 +32,7 @@ function MainView() {
                             <img src={portugalia} className="mainview_image" alt="Portugal" />
                         </div>
                     </div>
+                    </Link>
 
                     <div className="mainview_portfolio_project">
 

@@ -1,11 +1,26 @@
-import React from 'react';
+import React, {useState} from 'react';
+import {useStoreState} from "easy-peasy";
 
 function Projekt({projekt}) {
+    const bazaProjektow = useStoreState((state) => state.bazaProjektow);
+    const [photoNr, setPhotoNr] = useState(0);
+    const photoUp = () => {
+        if (photoNr === projekt.photo.length - 1) {
+            setPhotoNr(0);
+            return};
+        setPhotoNr(photoNr + 1)
+    }
+    const photoDown = () => {
+        if (photoNr === 0) { setPhotoNr(projekt.photo.length - 1); return;}
+        setPhotoNr(photoNr - 1)
+    }
     return (
         <div className="projekt">
-            <div >
+            <div className="projekt_box_img">
+                <div className="prj_main_btn_l" onClick={photoDown}></div>
+                <div className="prj_main_btn_r" onClick={photoUp}></div>
+                <img className="prj_main_img" src={`../../src/image/prj/${projekt.id}/${projekt.photo[photoNr]}`}/>
 
-                <img className="prj_main_img" src="../../src/image/prj/kladka_1A.jpg"/>
             </div>
             <div className="prj_description_box">
                 <div className="prj_left_column">

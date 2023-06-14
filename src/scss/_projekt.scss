@@ -7,12 +7,16 @@
   margin-top: 12rem;
 
 }
+.projekt_box_img {
+  position: relative;
+}
 .prj_description_box {
   display: flex;
   padding-top: 2rem;
 }
 .prj_main_img {
   width: 100%;
+  position: relative;
 
 }
 
@@ -37,4 +41,53 @@
   text-align: justify;
 
   width: 54rem;
+}
+
+@mixin prj_main_btn {
+  z-index: 20;
+
+  width: 3.5rem;
+  height: 100%;
+  bottom: 0;
+
+  background-color: rgba(0, 0, 0,1);
+  opacity: 0.1;
+  &:hover {
+    background-color: rgba(0, 0, 0, 1);
+    opacity: 0.5;
+  }
+}
+
+.prj_main_btn_l {
+  @include prj_main_btn;
+  border: 0;
+  position: absolute;
+  left: 0;
+  &:after {
+    content: "";
+    position: absolute;
+    rotate: 45deg;
+    left:1rem;
+    top: calc(50% - 1rem);
+    width: 2rem;
+    height: 2rem;
+    border-left: 0.2rem solid white;
+    border-bottom: 0.2rem solid white;
+  }
+}
+.prj_main_btn_r {
+  @include prj_main_btn;
+  position: absolute;
+  right: 0;
+  &:after {
+    content: "";
+    position: absolute;
+    rotate:225deg;
+    left:.1rem;
+    top: calc(50% - 1rem);
+    width: 2rem;
+    height: 2rem;
+    border-left: 0.2rem solid white;
+    border-bottom: 0.2rem solid white;
+  }
 }
