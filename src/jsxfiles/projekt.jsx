@@ -1,8 +1,8 @@
 import React, {useState} from 'react';
-import {useStoreState} from "easy-peasy";
+import {Link} from "react-router-dom";
+import Footer from "./footer.jsx";
 
 function Projekt({projekt}) {
-    const bazaProjektow = useStoreState((state) => state.bazaProjektow);
     const [photoNr, setPhotoNr] = useState(0);
     const photoUp = () => {
         if (photoNr === projekt.photo.length - 1) {
@@ -29,14 +29,19 @@ function Projekt({projekt}) {
                     <p> {projekt.award} </p>
                     <p> {projekt.phase} </p>
                     <p> {projekt.realization} </p>
+                    <Link to="/projekty">
+                        <button className="moreless_btn">powrót</button>
+                    </Link>
                 </div>
                 <div className="prj_right_column mainfont">
                     <p> {projekt.description} </p>
                 </div>
             </div>
-            <p>powrót</p><p> {projekt.id} </p>
+
+            <Footer/>
 
         </div>
+
     );
 }
 

@@ -15,7 +15,6 @@ import {StoreProvider, useStoreState} from 'easy-peasy';
 
 function App() {
     const page = useStoreState((state) => state.page);
-    const bazaProjektow = useStoreState((state) => state.bazaProjektow);
   return (
     <>
 
@@ -43,9 +42,9 @@ function App() {
                         <Route path="/pracownia" element={<Pracownia/>} />
                         <Route path="/projekty" element={<Projekty/>} />
                         <Route
-                            path={`projekty/${page}`}
+                            path={`projekty/${page.id}`}
                             element={<Projekt
-                                        projekt = {bazaProjektow[page - 1]}
+                                        projekt = {page}
                             />}
                         />
                         <Route path="/kontakt" element={<Kontakt/>} />

@@ -431,9 +431,12 @@ li {
 }
 
 .projekt {
+  position: relative;
+  box-sizing: border-box;
   width: 89rem;
+  min-height: 100vh;
   margin-inline: auto;
-  margin-top: 12rem;
+  padding-top: 12rem;
 }
 
 .projekt_box_img {
@@ -441,8 +444,10 @@ li {
 }
 
 .prj_description_box {
+  box-sizing: border-box;
   display: flex;
   padding-top: 2rem;
+  min-height: 35rem;
 }
 
 .prj_main_img {
@@ -452,9 +457,17 @@ li {
 
 .prj_left_column {
   box-sizing: border-box;
+  position: relative;
   width: 35rem;
   text-align: left;
   padding-right: 2rem;
+  padding-bottom: 3rem;
+}
+
+.prj_left_column button {
+  position: absolute;
+  left: 0;
+  bottom: 0;
 }
 
 .prj_left_column p {

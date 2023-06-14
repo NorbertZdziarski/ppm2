@@ -16,8 +16,6 @@ function MainView() {
                     <div className="mainview_section">
                         <h2>WYBRANE PROJEKTY</h2>
                     </div>
-                    <Link to="/pracownia/16">
-
                     <div className="mainview_portfolio_project">
                         <div className="mainview_box mainview_box__title">
                             <h3>SAGRES, PORTUGALIA</h3>
@@ -32,8 +30,6 @@ function MainView() {
                             <img src={portugalia} className="mainview_image" alt="Portugal" />
                         </div>
                     </div>
-                    </Link>
-
                     <div className="mainview_portfolio_project">
 
                         <div className="mainview_box mainview_box__title mainview_box__title_order">
