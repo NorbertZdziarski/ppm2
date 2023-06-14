@@ -1,5 +1,7 @@
 import React, {useState} from 'react';
 import Footer from "./footer.jsx";
+import {useNavigate} from "react-router-dom";
+import {useStoreActions, useStoreState} from "easy-peasy";
 
 function Projekty() {
     const [bigView, setBigView] = useState(true)
@@ -13,7 +15,9 @@ function Projekty() {
             "phase":"Projekt budowlany i wykonawczy",
             "award":"I nagroda w konkursie /2006 r./",
             "realization": "Realizacja",
-            "id": 1
+            "photo": "../../src/image/prj/kladka_1A.jpg",
+            "id": 1,
+            "projektId":"kladka"
         },
         {
             "title": "PROJEKT BUDYNKU POLITECHNIKI LUBELSKIEJ – WYDZIAŁ ARCHITEKTURY",
@@ -27,6 +31,7 @@ function Projekty() {
             "dataPZ" : 2549,
             "dataPU" : 6126,
             "dataKubatura" : 32147,
+            "photo": "../../src/image/prj/Nysa_S1.jpg",
             "id": 2,
         },
         {
@@ -41,6 +46,7 @@ function Projekty() {
             "dataPZ" : 5448,
             "dataPU" : 27627,
             "dataKubatura" : 85755,
+            "photo": "",
             "id": 3,
         },
         {
@@ -55,12 +61,18 @@ function Projekty() {
             "dataPZ" : 0,
             "dataPU" : 0,
             "dataKubatura" : 0,
+            "photo": "",
             "id": 4,
         }
     ]
+
+    const navigate = useNavigate();
+    const page = useStoreState((state) => state.page);
+    const setPage = useStoreActions((actions) => actions.setPage);
     const ShowBigPrj = ({ind, setBigView, description}) => {
         if (ind !== choosePrj) return;
         return (<>
+
             <p className="mainfont txtsection"></p>
             <p className="mainfont txtsection">{description}</p>
             <button className="moreless_btn" value={ind} onClick={() => setBigView(true)}>zamknij</button>
@@ -68,26 +80,20 @@ function Projekty() {
     }
 
     const chooseProject = (event) => {
-        setChoosePrj(event);
-        setBigView(false);
+        setPage(event);
+        navigate(`/projekty/${event.id}`);
     }
 
 
 
     const ShowProject = ({projekt, ind}) => {
-
-        let projektNr = projekt.id - 1;
         return (<div className="projekt_box" key={ind}>
-            <p className="mainfont txtsection">{projekt.title}</p>
-            <p className="mainfont txtsection_akaptit">{projekt.type}</p>
-            <p className="mainfont txtsection_akaptit">{projekt.phase}</p>
-            <p className="mainfont txtsection_akaptit">{projekt.award}</p>
-            <p className="mainfont txtsection_akaptit">{projekt.realization}</p>
 
-            {(bigView ? <>
-                <p className="mainfont">{projekt.description.slice(0,200)} ...</p>
-                <button className="moreless_btn" value={projektNr} onClick={() => chooseProject(projektNr)}>więcej informacji</button>
-                </> :<ShowBigPrj ind={ind} setBigView = {setBigView} description = {projekt.description} />)}
+            <img src={projekt.photo} className="prj_photo" />
+            <div className="projekt_blenda" onClick={() => chooseProject(projekt)}>
+                <h3 className="projekt_opis">{projekt.title}</h3>
+            </div>
+
         </div>)
     }
 

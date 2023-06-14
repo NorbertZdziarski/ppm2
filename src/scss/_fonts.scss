@@ -6,6 +6,9 @@
 @mixin mainfont {
   font-family: "Lexend",sans-serif;
   color: $colormainfont;
+  &:visited {
+    color: $backgroundcolor;
+  }
 }
 h2 {
   @include mainfont;

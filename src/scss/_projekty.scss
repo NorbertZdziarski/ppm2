@@ -5,17 +5,51 @@
 
 .paddingtop {
   padding-top: 12rem;
+    height: auto;
 }
 
 .projekt_box {
-  width: 95%;
+  position: relative;
+  box-sizing: border-box;
+  width: 80rem;
+  height: 40rem;
+  overflow: clip;
   border: 0 solid darkgrey;
   background-color: #ffffff;
-  box-shadow: 0 0 5px 4px rgba(0,0,0,0.05);
+  //box-shadow: 0 0 5px 4px rgba(0,0,0,0.05);
   margin-inline: auto;
-  padding: 10px;
-  border-radius: 5px;
-  margin-bottom: 1rem;
+
+  margin-bottom: 2rem;
+}
+
+.projekt_blenda {
+  z-index: 10;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  color: #000000;
+  background-color: rgb(255, 255, 255);
+  font-size: 5rem;
+  opacity: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  &:hover {
+    transition-duration: 0.5s;
+    cursor: pointer;
+    opacity: 0.6;
+  }
+}
+
+.projekt_opis {
+  box-sizing: border-box;
+  padding: 1rem;
+  font-size: 3.5rem;
+  font-weight: 400;
+  text-align: center;
 }
 
 .txtsection {
@@ -27,4 +61,10 @@
 }
 .txtsection_odstep {
   margin: 1rem 0 0.5rem 0;
+}
+
+.prj_photo {
+
+  z-index: 20;
+  width: 100%;
 }

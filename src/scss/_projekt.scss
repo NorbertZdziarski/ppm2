@@ -1,0 +1,40 @@
+
+.projekt {
+
+  width: 89rem;
+
+  margin-inline: auto;
+  margin-top: 12rem;
+
+}
+.prj_description_box {
+  display: flex;
+  padding-top: 2rem;
+}
+.prj_main_img {
+  width: 100%;
+
+}
+
+.prj_left_column {
+  box-sizing: border-box;
+
+  width: 35rem;
+  text-align: left;
+  padding-right: 2rem;
+}
+
+.prj_left_column p {
+  @include mainfont;
+  font-size: 1.6rem;
+  font-weight: 200;
+  line-height: 2rem;
+  margin-top: 1rem;
+}
+.prj_right_column {
+
+  box-sizing: border-box;
+  text-align: justify;
+
+  width: 54rem;
+}

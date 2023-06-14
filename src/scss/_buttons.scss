@@ -1,10 +1,15 @@
 .header_button {
+  cursor: pointer;
+  color: $backgroundcolor;
   margin-left: 2rem;
   margin-right: 1rem;
   &:hover {
     cursor: pointer;
     color: $colorheaderselected;
     transition-duration: 0.3s;
+  }
+  &:visited {
+    color: $backgroundcolor;
   }
 }
 
@@ -15,6 +20,7 @@
 }
 
 .moreless_btn {
+
   margin: 2px;
   width: 15rem;
   background-color: white;

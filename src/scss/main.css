@@ -17,6 +17,7 @@ table, caption, tbody, tfoot, thead, tr, th, td {
   font-size: 100%;
   font-family: inherit;
   vertical-align: baseline;
+  text-decoration: none;
 }
 
 /* remember to define focus styles! */
@@ -67,6 +68,9 @@ h2 {
   color: rgb(36, 36, 36);
   font-size: 2rem;
 }
+h2:visited {
+  color: rgb(248, 248, 248);
+}
 
 h3 {
   font-family: "Courier New", sans-serif;
@@ -80,6 +84,9 @@ h4 {
   font-size: 1.6rem;
   font-weight: 700;
 }
+h4:visited {
+  color: rgb(248, 248, 248);
+}
 
 .mainfont {
   font-family: "Lexend", sans-serif;
@@ -88,6 +95,9 @@ h4 {
   font-weight: 200;
   line-height: 2rem;
 }
+.mainfont:visited {
+  color: rgb(248, 248, 248);
+}
 
 .kontakt_fnt {
   font-family: "Lexend", sans-serif;
@@ -95,12 +105,18 @@ h4 {
   color: lightgrey;
   font-size: 2rem;
 }
+.kontakt_fnt:visited {
+  color: rgb(248, 248, 248);
+}
 
 .kontakt_fnt_name {
   font-family: "Lexend", sans-serif;
   color: rgb(36, 36, 36);
   color: #707070;
   font-size: 2rem;
+}
+.kontakt_fnt_name:visited {
+  color: rgb(248, 248, 248);
 }
 
 .kontakt_main_font {
@@ -110,8 +126,13 @@ h4 {
   font-weight: 200;
   color: lightgrey;
 }
+.kontakt_main_font:visited {
+  color: rgb(248, 248, 248);
+}
 
 .header_button {
+  cursor: pointer;
+  color: rgb(248, 248, 248);
   margin-left: 2rem;
   margin-right: 1rem;
 }
@@ -119,6 +140,9 @@ h4 {
   cursor: pointer;
   color: rgb(36, 36, 36);
   transition-duration: 0.3s;
+}
+.header_button:visited {
+  color: rgb(248, 248, 248);
 }
 
 .logo_btn:hover {
@@ -312,17 +336,48 @@ li {
 
 .paddingtop {
   padding-top: 12rem;
+  height: auto;
 }
 
 .projekt_box {
-  width: 95%;
+  position: relative;
+  box-sizing: border-box;
+  width: 80rem;
+  height: 40rem;
+  overflow: clip;
   border: 0 solid darkgrey;
   background-color: #ffffff;
-  box-shadow: 0 0 5px 4px rgba(0, 0, 0, 0.05);
   margin-inline: auto;
-  padding: 10px;
-  border-radius: 5px;
-  margin-bottom: 1rem;
+  margin-bottom: 2rem;
+}
+
+.projekt_blenda {
+  z-index: 10;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  color: #000000;
+  background-color: rgb(255, 255, 255);
+  font-size: 5rem;
+  opacity: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.projekt_blenda:hover {
+  transition-duration: 0.5s;
+  cursor: pointer;
+  opacity: 0.6;
+}
+
+.projekt_opis {
+  box-sizing: border-box;
+  padding: 1rem;
+  font-size: 3.5rem;
+  font-weight: 400;
+  text-align: center;
 }
 
 .txtsection {
@@ -335,6 +390,11 @@ li {
 
 .txtsection_odstep {
   margin: 1rem 0 0.5rem 0;
+}
+
+.prj_photo {
+  z-index: 20;
+  width: 100%;
 }
 
 .kontakt_conteiner {
@@ -364,6 +424,46 @@ li {
   justify-content: center;
   border-bottom: 1px solid darkgrey;
   margin-bottom: 1.5rem;
+}
+
+.projekt {
+  width: 89rem;
+  margin-inline: auto;
+  margin-top: 12rem;
+}
+
+.prj_description_box {
+  display: flex;
+  padding-top: 2rem;
+}
+
+.prj_main_img {
+  width: 100%;
+}
+
+.prj_left_column {
+  box-sizing: border-box;
+  width: 35rem;
+  text-align: left;
+  padding-right: 2rem;
+}
+
+.prj_left_column p {
+  font-family: "Lexend", sans-serif;
+  color: rgb(36, 36, 36);
+  font-size: 1.6rem;
+  font-weight: 200;
+  line-height: 2rem;
+  margin-top: 1rem;
+}
+.prj_left_column p:visited {
+  color: rgb(248, 248, 248);
+}
+
+.prj_right_column {
+  box-sizing: border-box;
+  text-align: justify;
+  width: 54rem;
 }
 
 /*# sourceMappingURL=main.css.map */

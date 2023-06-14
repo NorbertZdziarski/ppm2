@@ -1,12 +1,13 @@
 import React from 'react';
 import Footer from "./footer.jsx";
+import logo from "../../src/image/ico/logo_white.png"
 
 function Kontakt() {
     return (
         <>
         <div className="kontakt_conteiner conteiner">
             <div className="kontakt_box">
-                <img src="../../src/image/ico/logo_white.png" className="kontakt_img" alt="logo PPm2"/>
+                <img src={logo} className="kontakt_img" alt="logo PPm2"/>
                 <div className="kontakt_right_column">
                     <div className="kontakt_header">
                         <p className="kontakt_fnt">PRACOWNIA PROJEKTOWA M KWADRAT </p>
