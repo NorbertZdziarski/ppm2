@@ -12,7 +12,22 @@ li {
 .main_structure {
   width: 100vw;
   height: 100vh;
+
+  overflow-y: scroll;
+  &::-webkit-scrollbar {width: 1rem}
+  &::-webkit-scrollbar-thumb {
+    background: rgba(192, 191, 191, 0.3);
+    border-radius: .5rem;
+  }
+  &::-webkit-scrollbar-thumb:hover {
+    background: rgba(150, 150, 150, 0.86);
+
+  }
+  &::-webkit-scrollbar-track {
+    background: rgba(0,0,0,0);
+  }
 }
+
 
 .header_style {
   box-sizing: border-box;

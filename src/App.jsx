@@ -42,7 +42,7 @@ function App() {
                         <Route path="/pracownia" element={<Pracownia/>} />
                         <Route path="/projekty" element={<Projekty/>} />
                         <Route
-                            path={`projekty/${page.id}`}
+                            path={`/projekty/${page.id}`}
                             element={<Projekt
                                         projekt = {page}
                             />}

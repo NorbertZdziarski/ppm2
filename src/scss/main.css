@@ -175,6 +175,20 @@ li {
 .main_structure {
   width: 100vw;
   height: 100vh;
+  overflow-y: scroll;
+}
+.main_structure::-webkit-scrollbar {
+  width: 1rem;
+}
+.main_structure::-webkit-scrollbar-thumb {
+  background: rgba(192, 191, 191, 0.3);
+  border-radius: 0.5rem;
+}
+.main_structure::-webkit-scrollbar-thumb:hover {
+  background: rgba(150, 150, 150, 0.86);
+}
+.main_structure::-webkit-scrollbar-track {
+  background: rgba(0, 0, 0, 0);
 }
 
 .header_style {
@@ -434,7 +448,7 @@ li {
   position: relative;
   box-sizing: border-box;
   width: 89rem;
-  min-height: 100vh;
+  min-height: calc(100vh - 6rem);
   margin-inline: auto;
   padding-top: 12rem;
 }
@@ -447,7 +461,6 @@ li {
   box-sizing: border-box;
   display: flex;
   padding-top: 2rem;
-  min-height: 35rem;
 }
 
 .prj_main_img {

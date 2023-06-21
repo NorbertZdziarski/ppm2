@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React, {useEffect, useState} from 'react';
 import Footer from "./footer.jsx";
 import {useNavigate} from "react-router-dom";
 import {useStoreActions, useStoreState} from "easy-peasy";
@@ -360,7 +360,7 @@ function Projekty() {
     const ShowProject = ({projekt, ind}) => {
         return (<div className="projekt_box" key={ind}>
 
-            <img className="prj_photo" src={`../../src/image/prj/${projekt.id}/${projekt.photo[0]}`}/>
+            <img className="prj_photo" src={`../image/prj/${projekt.id}/${projekt.photo[0]}`}/>
             <div className="projekt_blenda" onClick={() => chooseProject(projekt)}>
                 <h3 className="projekt_opis">{projekt.title}</h3>
             </div>
