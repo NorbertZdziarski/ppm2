@@ -23,12 +23,20 @@ function App() {
                 <BrowserRouter basename="">
                   <header className='header_style menufont'>
                       <div className="header_title">
-                          <Link to="/"><img src={logo} alt="logo ppm2" className="logo_btn" /></Link>
-                          <p className="header_company_name">PRACOWNIA PROJEKTOWA M KWADRAT </p>
-                          <p className="header_person_name">MICHAŁ DĄBEK</p>
+                          <Link to="/"><img src={logo} alt="logo ppm2"  className="logo_btn" /></Link>
+                              <div className="rwd_conteiner">
+                                  <div className="screen">
+                                     <p className="header_company_name ">PRACOWNIA PROJEKTOWA M KWADRAT </p><p className="header_person_name">MICHAŁ DĄBEK</p>
+                                  </div>
+                                  <div className="mobile">
+                                      <p className="header_company_name">PPm2 </p>
+                                      <p className="header_person_name">MICHAŁ DĄBEK</p>
+                                  </div>
+                              </div>
+
                       </div>
                       <div className="header_title">
-                          <nav>
+                          <nav className="header_menu_rwd">
                               <Link to="/pracownia"><a className="header_button" >PRACOWNIA</a></Link>
                               <Link to="/projekty"><a className="header_button" >PROJEKTY</a></Link>
                               <Link to="/nagrody"><a className="header_button" >NAGRODY</a></Link>

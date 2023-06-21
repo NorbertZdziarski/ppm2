@@ -42,10 +42,11 @@ li {
   font-size: 1.6rem;
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: baseline;
   padding: 2rem;
   @include rwd {
     display: block;
+    height: calc($headerheight + 12rem);
   }
 }
 
@@ -57,17 +58,27 @@ li {
 
 .header_title {
   display: flex;
-  align-items: center;
+  align-items: baseline;
+
 }
 
 .header_company_name {
   margin-left: 1rem;
+  width: 80rem;
+  position: absolute;
+  left: 0;
+  top: -1.5rem;
 }
 
 .header_person_name {
-  margin-left: 0.5rem;
+  margin-left: 32rem;
   color: $colorheaderselected;
+  position: absolute;
+  width: 14rem;
+  top: -1.5rem;
 
+  @include rwd {
+    margin-left: 6rem;}
 }
 
 .footer {
@@ -79,10 +90,13 @@ li {
   justify-content: center;
   padding: 1rem;
   color: lightgrey;
+  @include rwd {
+    font-size: 1.3rem;
+    height: auto;
+  }
 }
 
 .pracownia_section {
   margin-bottom: 15px;
   text-align: justify;
 }
-

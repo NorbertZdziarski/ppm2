@@ -29,14 +29,24 @@ function Projekt({projekt}) {
                         <p> {projekt.cooperation} </p>
                         <p> {projekt.award} </p>
                         <p> {projekt.phase} </p>
+                        {(projekt.dataPTI !== 0 ? <p>Powierzchnia terenu inwestycji: {projekt.dataPTI} m2</p> : <></> )}
+                        {(projekt.dataPZ !== 0 ? <p> Powierzchnia zabudowy: {projekt.dataPZ} m2</p> : <></> )}
+                        {(projekt.dataPU !== 0 ? <p> Powierzchnia użytkowa: {projekt.dataPU} m2</p> : <></> )}
+                        {(projekt.dataKubatura !== 0 ? <p> Kubatura: {projekt.dataKubatura} m3</p> : <></> )}
                         <p> {projekt.realization} </p>
                         <Link to="/projekty">
-                            <button className="moreless_btn">powrót</button>
+                            <button className="moreless_btn screen">powrót</button>
                         </Link>
+
+
+
                     </div>
                     <div className="prj_right_column mainfont">
                         <p> {projekt.description} </p>
                     </div>
+                    <Link to="/projekty">
+                        <button className="moreless_btn mobile">powrót</button>
+                    </Link>
                 </div>
             </div>
             <Footer/>

@@ -10,7 +10,7 @@ function Kontakt() {
                 <img src={logo} className="kontakt_img" alt="logo PPm2"/>
                 <div className="kontakt_right_column">
                     <div className="kontakt_header">
-                        <p className="kontakt_fnt">PRACOWNIA PROJEKTOWA M KWADRAT </p>
+                        <p className="kontakt_fnt ">PRACOWNIA PROJEKTOWA M KWADRAT </p>
                         <p className="kontakt_fnt_name">MICHAŁ DĄBEK</p>
                     </div>
 

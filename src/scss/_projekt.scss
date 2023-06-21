@@ -7,6 +7,10 @@
   min-height: calc(100vh - 6rem);
   margin-inline: auto;
   padding-top: 12rem;
+  @include rwd {
+    margin-top: 8rem;
+    width: 100%;
+  }
 
 }
 .projekt_box_img {
@@ -17,6 +21,12 @@
   display: flex;
   padding-top: 2rem;
   //min-height: 35rem;
+  @include rwd {
+    display: block;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    width: 100%;
+  }
 }
 .prj_main_img {
   width: 100%;
@@ -31,6 +41,10 @@
   text-align: left;
   padding-right: 2rem;
   padding-bottom: 3rem;
+  letter-spacing: 0.7px;
+  @include rwd {
+    width: calc(100vw - 2rem);
+  }
 }
 
 .prj_left_column button {
@@ -52,6 +66,12 @@
   text-align: justify;
 
   width: 54rem;
+  @include rwd {
+    width: calc(100vw - 2rem);
+    margin-top: 1rem;
+    padding-right: 1rem;
+    margin-bottom: 2rem;
+  }
 }
 
 @mixin prj_main_btn {

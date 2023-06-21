@@ -1,4 +1,5 @@
 .kontakt_conteiner {
+  box-sizing: border-box;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -19,9 +20,12 @@
   height: 30rem;
   color: lightgrey;
   justify-content: space-around;
+  @include rwd {
+    margin-top: 22rem;}
 }
 
 .kontakt_header {
+  box-sizing: border-box;
   display: block;
   justify-content: center;
 

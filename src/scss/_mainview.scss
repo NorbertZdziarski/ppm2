@@ -15,6 +15,10 @@
     margin-inline: auto;
   @include rwd {
     width: 100%;
+    box-sizing: border-box;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-right: 1rem;
   }
 }
 
@@ -42,7 +46,6 @@
   padding: 1rem;
   width: $boxsize;
   height: $boxsize;
-  //border: 1px solid white;
   @include rwd {
     width: 100%;
   }

@@ -59,6 +59,34 @@ blockquote, q {
   font-size: 10px;
 }
 
+.rwd_conteiner {
+  background-color: #ffa100;
+  position: relative;
+}
+
+@media screen and (max-width: 950px) {
+  .screen {
+    opacity: 0;
+  }
+}
+
+@media screen and (min-width: 950px) {
+  .mobile {
+    opacity: 0;
+  }
+}
+
+@media screen and (max-width: 950px) {
+  .header_menu_rwd {
+    border-top: 0.1rem solid white;
+    padding-top: 1rem;
+    width: 100%;
+    margin-top: 2.5rem;
+    display: inline-block;
+    height: auto;
+  }
+}
+
 .menufont {
   font-family: "Lexend", sans-serif;
 }
@@ -144,6 +172,14 @@ h4:visited {
 .header_button:visited {
   color: rgb(248, 248, 248);
 }
+@media screen and (max-width: 950px) {
+  .header_button {
+    display: inline-block;
+    height: 2.5rem;
+    margin-left: 0;
+    width: 90%;
+  }
+}
 
 .logo_btn:hover {
   cursor: pointer;
@@ -152,9 +188,9 @@ h4:visited {
 .moreless_btn {
   margin: 2px;
   width: 15rem;
-  background-color: white;
-  border-radius: 4px;
-  padding: 3px;
+  border: 0;
+  background-color: lightgrey;
+  padding: 5px;
 }
 .moreless_btn:hover {
   box-shadow: inset 1px 1px 2px 2px rgba(0, 0, 0, 0.1);
@@ -204,12 +240,13 @@ li {
   font-size: 1.6rem;
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: baseline;
   padding: 2rem;
 }
 @media screen and (max-width: 950px) {
   .header_style {
     display: block;
+    height: 20rem;
   }
 }
 
@@ -221,16 +258,28 @@ li {
 
 .header_title {
   display: flex;
-  align-items: center;
+  align-items: baseline;
 }
 
 .header_company_name {
   margin-left: 1rem;
+  width: 80rem;
+  position: absolute;
+  left: 0;
+  top: -1.5rem;
 }
 
 .header_person_name {
-  margin-left: 0.5rem;
+  margin-left: 32rem;
   color: rgb(36, 36, 36);
+  position: absolute;
+  width: 14rem;
+  top: -1.5rem;
+}
+@media screen and (max-width: 950px) {
+  .header_person_name {
+    margin-left: 6rem;
+  }
 }
 
 .footer {
@@ -242,6 +291,12 @@ li {
   justify-content: center;
   padding: 1rem;
   color: lightgrey;
+}
+@media screen and (max-width: 950px) {
+  .footer {
+    font-size: 1.3rem;
+    height: auto;
+  }
 }
 
 .pracownia_section {
@@ -265,6 +320,10 @@ li {
 @media screen and (max-width: 950px) {
   .mainview_conteiner {
     width: 100%;
+    box-sizing: border-box;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-right: 1rem;
   }
 }
 
@@ -351,10 +410,20 @@ li {
 .paddingtop {
   padding-top: 12rem;
 }
+@media screen and (max-width: 950px) {
+  .paddingtop {
+    padding-top: 24rem;
+  }
+}
 
 .paddingtop2 {
   padding-top: 12rem;
   height: auto;
+}
+@media screen and (max-width: 950px) {
+  .paddingtop2 {
+    padding-top: 24rem;
+  }
 }
 
 .projekt_box {
@@ -391,11 +460,16 @@ li {
 }
 
 .projekt_opis {
+  font-family: "Lexend", sans-serif;
+  color: rgb(36, 36, 36);
   box-sizing: border-box;
   padding: 1rem;
   font-size: 3.5rem;
-  font-weight: 400;
+  font-weight: 200;
   text-align: center;
+}
+.projekt_opis:visited {
+  color: rgb(248, 248, 248);
 }
 
 .txtsection {
@@ -416,6 +490,7 @@ li {
 }
 
 .kontakt_conteiner {
+  box-sizing: border-box;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -436,8 +511,14 @@ li {
   color: lightgrey;
   justify-content: space-around;
 }
+@media screen and (max-width: 950px) {
+  .kontakt_box {
+    margin-top: 22rem;
+  }
+}
 
 .kontakt_header {
+  box-sizing: border-box;
   display: block;
   justify-content: center;
   border-bottom: 1px solid darkgrey;
@@ -452,6 +533,12 @@ li {
   margin-inline: auto;
   padding-top: 12rem;
 }
+@media screen and (max-width: 950px) {
+  .projekt {
+    margin-top: 8rem;
+    width: 100%;
+  }
+}
 
 .projekt_box_img {
   position: relative;
@@ -461,6 +548,14 @@ li {
   box-sizing: border-box;
   display: flex;
   padding-top: 2rem;
+}
+@media screen and (max-width: 950px) {
+  .prj_description_box {
+    display: block;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    width: 100%;
+  }
 }
 
 .prj_main_img {
@@ -475,6 +570,12 @@ li {
   text-align: left;
   padding-right: 2rem;
   padding-bottom: 3rem;
+  letter-spacing: 0.7px;
+}
+@media screen and (max-width: 950px) {
+  .prj_left_column {
+    width: calc(100vw - 2rem);
+  }
 }
 
 .prj_left_column button {
@@ -499,6 +600,14 @@ li {
   box-sizing: border-box;
   text-align: justify;
   width: 54rem;
+}
+@media screen and (max-width: 950px) {
+  .prj_right_column {
+    width: calc(100vw - 2rem);
+    margin-top: 1rem;
+    padding-right: 1rem;
+    margin-bottom: 2rem;
+  }
 }
 
 .prj_main_btn_l {

@@ -3,3 +3,40 @@
     @content
   }
 }
+
+@mixin header_position {
+  //position: relative;
+  //left: 0rem;
+  //bottom: 0rem;
+}
+
+.rwd_conteiner {
+  background-color: #ffa100;
+  position: relative;
+}
+
+.screen {
+
+  @include header_position;
+  @media screen and (max-width: 950px) {
+    opacity: 0;
+  }
+}
+.mobile {
+  @include header_position;
+  @media screen and (min-width: 950px) {
+
+    opacity: 0;
+  }
+}
+
+.header_menu_rwd {
+  @media screen and (max-width: 950px) {
+    border-top: 0.1rem solid white;
+    padding-top: 1rem;
+    width: 100%;
+    margin-top: 2.5rem;
+    display: inline-block;
+    height: auto;
+  }
+}
