@@ -6,6 +6,7 @@
 .paddingtop {
   padding-top: 12rem;
   @include rwd {
+    height: auto;
     padding-top: 24rem;}
 }
 

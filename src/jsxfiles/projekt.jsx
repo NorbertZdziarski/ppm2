@@ -1,8 +1,12 @@
-import React, {useState} from 'react';
-import {Link} from "react-router-dom";
+import React, {useEffect, useState} from 'react';
+import {Link, useLocation} from "react-router-dom";
 import Footer from "./footer.jsx";
+import {useStoreActions, useStoreState} from "easy-peasy";
 
 function Projekt({projekt}) {
+
+
+
     const [photoNr, setPhotoNr] = useState(0);
     const photoUp = () => {
         if (photoNr === projekt.photo.length - 1) {
@@ -14,6 +18,10 @@ function Projekt({projekt}) {
         if (photoNr === 0) { setPhotoNr(projekt.photo.length - 1); return;}
         setPhotoNr(photoNr - 1)
     }
+
+
+
+
     return (
         <>
             <div className="projekt">

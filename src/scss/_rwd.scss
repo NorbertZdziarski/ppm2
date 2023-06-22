@@ -40,3 +40,22 @@
     height: auto;
   }
 }
+
+.paddingtop {
+  padding-top: 12rem;
+  @include rwd {
+    padding-top: 24rem;
+    height: auto;
+  }
+
+}
+
+
+
+.paddingtop2 {
+  padding-top: 12rem;
+  height: auto;
+  @include rwd {
+    padding-top: 24rem;
+  }
+}

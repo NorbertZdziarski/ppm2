@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import {useEffect, useState} from 'react'
 import MainView from "./jsxfiles/mainView.jsx";
 import Pracownia from "./jsxfiles/pracownia.jsx";
 import Projekty from "./jsxfiles/projekty.jsx";
@@ -7,7 +7,7 @@ import Nagrody from "./jsxfiles/nagrody.jsx";
 import logo from "../src/image/ico/logo_white.png";
 import {
     Route,
-    Routes, Router, useRoutes, BrowserRouter, Link,
+    Routes, Router, useRoutes, BrowserRouter, Link, useLocation,
 } from "react-router-dom";
 import Projekt from "./jsxfiles/projekt.jsx";
 import {StoreProvider, useStoreState} from 'easy-peasy';
@@ -15,6 +15,16 @@ import {StoreProvider, useStoreState} from 'easy-peasy';
 
 function App() {
     const page = useStoreState((state) => state.page);
+    // const [nrProjektuUrl, setNrProjektuUrl] = useState(0)
+    // const bazaProjektow = useStoreState((state) => state.bazaProjektow);
+
+    // const location = useLocation();
+
+    // useEffect(() => {
+    //     const fullUrl = window.location.href;
+    //     setNrProjektuUrl(fullUrl.charAt(fullUrl.length - 1))
+    //     // console.log(bazaProjektow[nrProjektuUrl])
+    // }, [location]);
   return (
     <>
 
