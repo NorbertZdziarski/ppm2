@@ -445,21 +445,23 @@ li {
 @media screen and (max-width: 950px) {
   .pracownia_box {
     width: 100%;
-    display: block;
-    text-align: center;
+    overflow: auto;
   }
 }
 
 .pracownia_img {
   box-sizing: border-box;
   width: 16.5rem;
-  padding-right: 1rem;
+  padding-left: 1rem;
 }
 
 .pracownia_img_mobile {
   box-sizing: border-box;
-  width: 70%;
+  width: 30vw;
+  height: 30vw;
   margin-bottom: 1.5rem;
+  float: left;
+  margin-right: 1.5rem;
 }
 
 .pracownia_section p {
