@@ -8,7 +8,7 @@ function Nagrody() {
             <header className="projekty_header">
                 <h2>Nagrody:</h2>
             </header>
-            <section className="nagrody_fnt_name ">
+            <section className="nagrody_fnt_name nagrody_section">
                  <li><b>I miejsce</b> w konkursie - KONCEPCJA ARCHITEKTONICZNO- URBANISTYCZNA KŁADKI PIESZO-ROWEROWEJ KAZIMIERZ-PODGÓRZE W KRAKOWIE /współautor/, obiekt zrealizowany w 2010 r.</li>
                  <li><b>I miejsce</b> – MIĘDZYNARODOWY KONKURS ARCHITEKTONICZNO-RZEŹBIARSKI NA PROJEKT POMNIKA HENRYKA SŁAWIKA I JÓZEFA ANTALLA SENIORA W KATOWICACH /współautor/, pomnik odsłonięty 21.03.2015 r.;</li>
                  <li><b>Wyróżnienie</b> – REALIZACYJNY KONKURS NA KONCEPCJĘ ARCHITEKTONICZNĄ PANTEONU-MAUZOLEUM OFIAR ZBRODNI KOMUNISTYCZNYCH ZLOKALIZOWANEGO NA KWATERZE „Ł” CMENTARZA WOJSKOWEGO NA POWĄZKACH W WARSZAWIE /współautor/, - wybór projektu do realizacji, odsłonięcie pierwszego etapu 27.09.2015 r.;</li>

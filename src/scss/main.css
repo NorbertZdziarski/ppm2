@@ -434,6 +434,11 @@ li {
   }
 }
 
+.nagrody_section {
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+
 .pracownia_box {
   display: flex;
 }
@@ -495,8 +500,9 @@ li {
 .projekt_box {
   position: relative;
   box-sizing: border-box;
-  width: 80rem;
-  height: 40rem;
+  width: 100%;
+  height: auto;
+  max-height: 40rem;
   overflow: clip;
   border: 0 solid darkgrey;
   background-color: #ffffff;
@@ -582,6 +588,12 @@ li {
     margin-top: 22rem;
   }
 }
+@media screen and (max-width: 495px) {
+  .kontakt_box {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+}
 
 .kontakt_header {
   box-sizing: border-box;
@@ -589,6 +601,12 @@ li {
   justify-content: center;
   border-bottom: 1px solid darkgrey;
   margin-bottom: 1.5rem;
+}
+
+@media screen and (max-width: 495px) {
+  .kontakt_right_column {
+    padding-left: 1rem;
+  }
 }
 
 .projekt {

@@ -22,6 +22,10 @@
   justify-content: space-around;
   @include rwd {
     margin-top: 22rem;}
+  @media screen and (max-width: 495px) {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
 }
 
 .kontakt_header {
@@ -34,5 +38,6 @@
 }
 
 .kontakt_right_column {
-
+  @media screen and (max-width: 495px) {
+    padding-left: 1rem;}
 }

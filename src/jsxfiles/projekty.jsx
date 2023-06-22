@@ -376,7 +376,7 @@ function Projekty() {
         <>
             <div className="conteiner mainview_conteiner paddingtop2" key="projekty">
                 <header className="projekty_header">
-                    <h2>Projekty:</h2>
+                    <h2>Wybrane projekty:</h2>
                 </header>
                 {bazaProjektow.map((projekt,ind) => <ShowProject
                     projekt={projekt}
